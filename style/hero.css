@@ -1,0 +1,140 @@
+:root{
+    --primary-color: #3F5E4D;
+    --secondary-color: #D46A4C;
+    --tertiary-color: #E5C185;
+    --quaternary-color: #F9F6F0;
+    --texts-color: #2C2C2C;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-primary);
+    background-color: var(--quaternary-color);
+    color: var(--texts-color);
+    line-height: 1.6;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#Image-hero{
+    width: 100%;
+    height: 250px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(63, 94, 77, 0.08);
+}
+
+#Image-hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-hero{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(63, 94, 77, 0.08);
+    border: 1px solid rgba(63, 94, 77, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-hero h1{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--texts-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.text-hero p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--texts-color);
+    opacity: 0.85;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    padding: 10px 20px;
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img{
+    height: 60px;
+    width: auto;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+}
+
+#logo header{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Popis', sans-serif;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row-reverse; 
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .text-hero, 
+    #Image-hero {
+        flex: 1;
+        min-height: 320px;
+        height: auto;
+    }
+
+    .text-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .text-hero p {
+        font-size: 1.125rem;
+    }
+}
+
