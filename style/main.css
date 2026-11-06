@@ -49,3 +49,47 @@
     font-family: 'Popis', sans-serif;
     font-weight: 600;
 }
+
+#btn_principal{
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+.barra_bsqd{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 2rem;
+}
+
+.search-form{
+    position: relative;
+    width: 100%;
+}
+
+.search-input{
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 2.2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: var(--texts-color);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus{
+    border-color: var(--primary-color);
+}
+
+.search-icon{
+    position: absolute;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    pointer-events: none;
+}
