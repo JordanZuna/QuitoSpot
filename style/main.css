@@ -155,16 +155,6 @@ body{
     opacity: 0.85;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 15px 30px;
-    padding: 10px 20px;
-
-}
-
 #logo {
     display: flex;
     align-items: center;
